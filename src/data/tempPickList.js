@@ -7,67 +7,69 @@
 
 const pickList = [
   {
-    id: 0,
+    id: 43,
     routeNumber: 23,
     stagingLoc: "B07",
     cartNumber: 1,
     bagList: [
       {
         bagColor: "orange",
-        bagNumber: 483,
-        bagShelfLoc: "G-3.A",
+        bagNumber:1,
+        bagShelfLoc: "G-13.3A",
         bagCartLoc: 1,
         // If a bag is over 30 pounds it is "heavy", and the picker is warned.
-        weight: 08.14
+        weight: 8.14
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
-        bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagNumber: 2,
+        bagShelfLoc: "G-13.2A",
+        bagCartLoc: 2
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
-        bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagNumber: 3,
+        bagShelfLoc: "G-13.1A",
+        bagCartLoc: 3
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 4,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 4
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 5,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 5
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 6,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 6
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 7,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 7
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 8,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 8
       },
       {
         bagColor: "orange",
-        bagNumber: 483,
+        bagNumber: 9,
         bagShelfLoc: "G-3.A",
-        bagCartLoc: 1
+        bagCartLoc: 9
       },
     ]
   },
 ]
+
+export { pickList };
