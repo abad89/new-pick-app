@@ -13,7 +13,7 @@ const pickList = [
     cartNumber: 1,
     bagList: [
       {
-        bagColor: "orange",
+        bagColor: "yellow",
         bagNumber:1,
         bagShelfLoc: "G-13.3A",
         bagCartLoc: 1,
@@ -21,51 +21,51 @@ const pickList = [
         weight: 8.14
       },
       {
-        bagColor: "orange",
+        bagColor: "green",
         bagNumber: 2,
         bagShelfLoc: "G-13.2A",
         bagCartLoc: 2
       },
       {
-        bagColor: "orange",
+        bagColor: "navy",
         bagNumber: 3,
         bagShelfLoc: "G-13.1A",
         bagCartLoc: 3
       },
       {
-        bagColor: "orange",
+        bagColor: "yellow",
         bagNumber: 4,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "G-13.3B",
         bagCartLoc: 4
       },
       {
-        bagColor: "orange",
+        bagColor: "green",
         bagNumber: 5,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "G-13.2B",
         bagCartLoc: 5
       },
       {
-        bagColor: "orange",
+        bagColor: "green",
         bagNumber: 6,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "G-13.1B",
         bagCartLoc: 6
       },
       {
-        bagColor: "orange",
+        bagColor: "navy",
         bagNumber: 7,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "G-13.2E",
         bagCartLoc: 7
       },
       {
-        bagColor: "orange",
+        bagColor: "yellow",
         bagNumber: 8,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "H-18.1G",
         bagCartLoc: 8
       },
       {
-        bagColor: "orange",
+        bagColor: "yellow",
         bagNumber: 9,
-        bagShelfLoc: "G-3.A",
+        bagShelfLoc: "H-18.2G",
         bagCartLoc: 9
       },
     ]

@@ -1,6 +1,7 @@
 import './App.css';
 import { pickList } from './data/tempPickList';
 import BagCard from './components/BagCard'
+import Header from './components/Header';
 function App() {
   const bags = pickList[0].bagList
 
@@ -19,9 +20,10 @@ function App() {
 
 
   return (
-    <div>
-      <p>Hello World.app.js</p>
-      <ul className='grid-container'>
+    <div className='app'>
+      {/* <p>Hello World.app.js</p> */}
+      <Header />
+      <ul className='bag-container'>
         {bagsItem}
       </ul>
     </div>

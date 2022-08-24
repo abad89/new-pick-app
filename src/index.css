@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: rgb(206, 206, 206);
 }
 ol, ul {
 	list-style: none;
@@ -51,9 +52,36 @@ table {
   box-sizing: border-box;
 }
 
-.grid-container {
+.app {
+	display: grid;
+	gap: 2rem;
+}
+
+.header {
+	grid-column: 1/4;
+	overflow: hidden;
+	background-color: rgb(104, 2, 172);
+}
+
+.header * {
+	float: left;
+	color: rgb(206, 206, 206);
+	text-decoration: none;
+	padding: 1.25rem;
+}
+
+.header button {
+	background-color: rgb(237, 255, 78);
+	color: black;
+}
+
+.bag-container {
+	grid-column: 1/2;
+	grid-row: 2/3;
   display: grid;
-  gap: 50px 200px;
+  gap: 2rem;
+	width: 75%;
+	place-items: center;
 
 }
 
@@ -65,4 +93,75 @@ table {
 .bag2 {
 	grid-column: 2/3;
 	grid-row: 3/4;
+}
+
+.bag3 {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+.bag4 {
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.bag5 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.bag6 {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.bag7 {
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.bag8 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.bag9 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.bag {
+	min-width: 150px;
+	min-height: 150px;
+	text-align: center;
+	display: grid;
+	place-items: center;
+}
+
+.yellow {
+	border: 30px solid rgb(189, 189, 14);
+}
+.yellow > div:nth-child(2) {
+	color: rgb(189, 189, 14);
+}
+
+.green {
+	border: 30px solid green;
+}
+.green > div:nth-child(2) {
+	color: green;
+}
+
+.navy {
+	border: 30px solid rgb(59, 79, 255);
+}
+.navy > div:nth-child(2) {
+	color: rgb(59, 79, 255);
+}
+
+.black {
+	border: 30px solid black;
+}
+.black > div:nth-child(2) {
+	color: black;
 }
