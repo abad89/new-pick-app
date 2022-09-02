@@ -3,7 +3,9 @@ export default function Header() {
     <div className='header'>
       <a href="home">New Pick App</a>
       <a href="http://antgbad.com">About</a>
-      <button>Scan!</button>
+      {/* <span> */}
+        <button>Scan!</button>
+      {/* </span> */}
     </div>
   )
 }
