@@ -4,6 +4,7 @@ import { new_picklist } from './data/dynamicPickList';
 import BagCard from './components/BagCard'
 import Header from './components/Header';
 import Director from './components/Director';
+import InfoBox from "./components/InfoBox";
 
 function App() {
   const [bagsState, setBagsState] = useState(new_picklist)
@@ -26,11 +27,14 @@ function App() {
 
   return (
     <div className='app'>
+      <div className="main-grid-container">
       <Header bagsState={bagsState}/>
       <Director bagsState={bagsState} />
       <ul className='bag-container'>
         {bagsItem}
       </ul>
+      </div>
+      <InfoBox />
     </div>
 
   );
