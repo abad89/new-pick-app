@@ -1,14 +1,17 @@
+import { useState } from "react";
 import './App.css';
-import { pickList } from './data/tempPickList';
+import { new_picklist } from './data/dynamicPickList';
 import BagCard from './components/BagCard'
 import Header from './components/Header';
 import Director from './components/Director';
 
 function App() {
-  const bags = pickList[0].bagList
-
+  const [bagsState, setBagsState] = useState(new_picklist)
+  // console.log("app.js line 10", bagsState)
+  // console.log("app.js", bagsState)
+  const bags = bagsState.bagList
  
-  const bagsItem = bags.map((bag) => (
+  const bagsItem = bags?.map((bag) => (
     <BagCard
       key={bag.bagNumber}
       color={bag.bagColor}
@@ -23,8 +26,8 @@ function App() {
 
   return (
     <div className='app'>
-      <Header />
-      <Director />
+      <Header bagsState={bagsState}/>
+      <Director bagsState={bagsState} />
       <ul className='bag-container'>
         {bagsItem}
       </ul>

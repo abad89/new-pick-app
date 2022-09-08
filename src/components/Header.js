@@ -1,14 +1,34 @@
-export default function Header() {
+import React from "react"
+import { useState } from "react";
+
+export default function Header( {bagsState} ) {
+  
+  
+  const [directorStage, setDirectorStage] = useState(0)
+  const [currentBag, setCurrentBag] = useState(1)
+
+ 
 
   function handleScan(e) {
     e.preventDefault()
-    console.log("scanned!")
-    let currentBag = 1
-    let bag = document.getElementsByClassName(`bag${currentBag}`)
-    bag[0].classList.remove('not-picked')
-    bag[0].classList.add('picked')
-    currentBag =+ 1
+    // const cartNumber = bagsState.cartNumber
+    switch(directorStage) {
+      case 0:
+        // let bag = document.getElementsByClassName(`bag${currentBag}`)
+        // let currentBagNumber = bagsState.bagList[0].bagNumber
+        // bag[0].classList.remove('not-picked')
+        // bag[0].classList.add('picked')
+        // setCurrentBag(currentBag+1)
+        document.querySelector("#root > div > div.director > p").innerHTML = `Place bag ${currentBag.bagNumber} on cart as shown and scan cart`
+        setDirectorStage(directorStage + 1)
+        break;
+      case 1:
+        
+
+    }
   }
+
+
 
 
   return (
