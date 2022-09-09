@@ -14,15 +14,8 @@ export default function Header( {bagsState} ) {
 
   function handleScan(e) {
     e.preventDefault()
-    // const cartNumber = bagsState.cartNumber
     switch(directorStage) {
       case 0:
-        // let bag = document.getElementsByClassName(`bag${currentBag}`)
-        // let currentBagNumber = bagsState.bagList[0].bagNumber
-        // bag[0].classList.remove('not-picked')
-        // bag[0].classList.add('picked')
-        // setCurrentBag(currentBag+1)
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -34,7 +27,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 2:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -46,7 +38,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 4:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -58,7 +49,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 6:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -70,7 +60,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 8:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -82,7 +71,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 10:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -94,7 +82,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 12:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -106,7 +93,6 @@ export default function Header( {bagsState} ) {
         setDirectorStage(directorStage+1)
         break;
       case 14:
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -117,14 +103,11 @@ export default function Header( {bagsState} ) {
         bag8[0].classList.add('picked')
        directorText(`Scan bag ${bagsState.bagList[8].bagNumber}`)
         setDirectorStage(directorStage+1)
-        console.log("case 15")
         break;
       case 16:
         // just says to scan cart
-        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
-        console.log("case 16")
         break;
       case 17:
         // changes last bag to solid and says scan bag 540
@@ -132,13 +115,10 @@ export default function Header( {bagsState} ) {
         bag9[0].classList.remove('not-picked')
         bag9[0].classList.add('picked')
         // we do not need to change the director again
-        //directorText(`Scan bag ${bagsState.bagList[8].bagNumber}`
         setDirectorStage(directorStage+1)
-        console.log("case 17")
         break;
         case 18:
         directorText(`Scan staging location ${bagsState.stagingLoc}`)
-        // console.log("case 18")
         setDirectorStage(directorStage+1)
           break;
         case 19:
