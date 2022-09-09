@@ -7,7 +7,7 @@ export default function Header( {bagsState} ) {
   const [directorStage, setDirectorStage] = useState(0)
 
   function directorText(text) {
-    return document.querySelector("#root > div > div.director > p").innerHTML = `${text}`
+    return document.querySelector("#root > div > div.main-grid-container > div.director > p").innerHTML = `${text}`
   }
 
  
@@ -30,7 +30,7 @@ export default function Header( {bagsState} ) {
         let bag = document.getElementsByClassName('bag1')
         bag[0].classList.remove('not-picked')
         bag[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[1].bagNumber}`
+        directorText(`Scan bag ${bagsState.bagList[1].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 2:
@@ -42,11 +42,11 @@ export default function Header( {bagsState} ) {
         let bag2 = document.getElementsByClassName('bag2')
         bag2[0].classList.remove('not-picked')
         bag2[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[2].bagNumber}`
+        directorText(`Scan bag ${bagsState.bagList[2].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 4:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -54,11 +54,11 @@ export default function Header( {bagsState} ) {
         let bag3 = document.getElementsByClassName('bag3')
         bag3[0].classList.remove('not-picked')
         bag3[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[3].bagNumber}`
+        directorText(`Scan bag ${bagsState.bagList[3].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 6:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -66,11 +66,11 @@ export default function Header( {bagsState} ) {
         let bag4 = document.getElementsByClassName('bag4')
         bag4[0].classList.remove('not-picked')
         bag4[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[4].bagNumber}`
+       directorText(`Scan bag ${bagsState.bagList[4].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 8:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -78,11 +78,11 @@ export default function Header( {bagsState} ) {
         let bag5 = document.getElementsByClassName('bag5')
         bag5[0].classList.remove('not-picked')
         bag5[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[5].bagNumber}`
+       directorText(`Scan bag ${bagsState.bagList[5].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 10:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -90,11 +90,11 @@ export default function Header( {bagsState} ) {
         let bag6 = document.getElementsByClassName('bag6')
         bag6[0].classList.remove('not-picked')
         bag6[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[6].bagNumber}`
+       directorText(`Scan bag ${bagsState.bagList[6].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 12:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -102,11 +102,11 @@ export default function Header( {bagsState} ) {
         let bag7 = document.getElementsByClassName('bag7')
         bag7[0].classList.remove('not-picked')
         bag7[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[7].bagNumber}`
+       directorText(`Scan bag ${bagsState.bagList[7].bagNumber}`)
         setDirectorStage(directorStage+1)
         break;
       case 14:
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         break;
@@ -115,13 +115,13 @@ export default function Header( {bagsState} ) {
         let bag8 = document.getElementsByClassName('bag8')
         bag8[0].classList.remove('not-picked')
         bag8[0].classList.add('picked')
-        document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[8].bagNumber}`
+       directorText(`Scan bag ${bagsState.bagList[8].bagNumber}`)
         setDirectorStage(directorStage+1)
         console.log("case 15")
         break;
       case 16:
         // just says to scan cart
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan cart`
+        //directorText(`Scan cart`
         directorText("Scan cart")
         setDirectorStage(directorStage + 1)
         console.log("case 16")
@@ -132,7 +132,7 @@ export default function Header( {bagsState} ) {
         bag9[0].classList.remove('not-picked')
         bag9[0].classList.add('picked')
         // we do not need to change the director again
-        // document.querySelector("#root > div > div.director > p").innerHTML = `Scan bag ${bagsState.bagList[8].bagNumber}`
+        //directorText(`Scan bag ${bagsState.bagList[8].bagNumber}`
         setDirectorStage(directorStage+1)
         console.log("case 17")
         break;
