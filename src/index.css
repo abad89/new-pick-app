@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 	/* background: rgb(206, 206, 206); */
 	font-family: "Verdana";
-	font-size: 2.75vw;
+	font-size: 2.75rem;
 }
 ol, ul {
 	list-style: none;
@@ -89,11 +89,12 @@ table {
 .bag-container {
 	grid-column: 2/3;
 	grid-row: 3/4;
+  height: 60.4rem;
+  width: 60.4rem;
   display: grid;
   gap: .2rem;
-	place-items: center;
-	/* min-height: 500px; */
-
+  aspect-ratio: 1/1;
+  margin: 0 auto;
 }
 
 .bag1 {
@@ -142,12 +143,12 @@ table {
 }
 
 .bag {
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	display: grid;
-	place-items: center;
-	aspect-ratio: 1/1;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
 }
 
 .yellow {
