@@ -76,6 +76,7 @@ table {
 	background-color: rgb(237, 255, 78);
 	color: black;
 	float: right;
+	touch-action: manipulation;
 }
 
 .director {
